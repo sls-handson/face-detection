@@ -66,7 +66,26 @@ E:\workspaces\e.4.7.2\face-detection>
 ## Invoke
 ```
 E:\workspaces\e.4.7.2\face-detection>sls invoke -f put -p event.json --no A001
-true
+{
+    "userId": "satoh001",
+    "s3Key": "image3.jpg",
+    "s3Bucket": "rekognition-satoh-test3",
+    "collectionId": "rekognition-satoh-test-id",
+    "detectedFaceDetails": {
+        "boundingBox": {
+            "width": 0.4091653,
+            "height": 0.5118456,
+            "left": 0.3717559,
+            "top": 0.14331676
+        },
+～～～～～～
+        "quality": {
+            "brightness": 56.283524,
+            "sharpness": 99.97486
+        },
+        "confidence": 99.99857
+    }
+}
 
 E:\workspaces\e.4.7.2\face-detection>
 ```

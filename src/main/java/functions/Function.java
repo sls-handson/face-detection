@@ -57,6 +57,7 @@ public class Function implements java.util.function.Function<Input, Output> {
 			output.setUserId(input.getUserId());
 			output.setS3Bucket(input.getS3Bucket());
 			output.setS3Key(input.getS3Key());
+			output.setCollectionId(input.getCollectionId());
 			output.setDetectedFaceDetails(faceDetails.get(0));
 
 		} catch (ImageTooLargeException e) {
