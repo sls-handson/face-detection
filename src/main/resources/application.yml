@@ -1,0 +1,10 @@
+app:
+    region: us-east-1
+
+#spring5 + spring-cloud-aws 2 ...   
+#cloud:
+#    aws:
+#        region:
+#            static: us-west-2
+#        credentials:
+#            useDefaultAwsCredentialsChain: true

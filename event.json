@@ -1,0 +1,6 @@
+{
+    "userId": "satoh001",
+    "s3Bucket": "rekognition-satoh-test3",
+    "s3Key": "image3.jpg",
+    "collectionId": "rekognition-satoh-test-id"
+}
