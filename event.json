@@ -1,6 +1,6 @@
 {
     "userId": "satoh001",
-    "s3Bucket": "rekognition-satoh-test3",
-    "s3Key": "image3.jpg",
-    "collectionId": "rekognition-satoh-test-id"
+    "s3Bucket": "stylez-sls-handson-rekognition",
+    "s3Key": "1_happy_face.jpg",
+    "collectionId": "a001-rekognition"
 }

@@ -23,15 +23,26 @@ provider:
   runtime: java8
   timeout: 90
   profile: sls-handson
-  role: 'arn:aws:iam::184619842885:role/RoleSlsHandson2017'
-
 
 # you can overwrite defaults here
 #  stage: dev
   region: us-east-1
 
 # you can add statements to the Lambda function's IAM Role here
-#  iamRoleStatements:
+  iamRoleStatements:
+    - Effect: Allow
+      Action:
+        - rekognition:*
+      Resource:
+        - '*'
+    - Effect: Allow
+      Action:
+        - s3:GetObject
+      Resource: 
+         - 'Fn::Join':
+           - ':'
+           -
+             - 'arn:aws:s3:::stylez-sls-handson-rekognition/*'
 #    - Effect: "Allow"
 #      Action:
 #        - "s3:ListBucket"

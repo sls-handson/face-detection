@@ -3,17 +3,17 @@
 	mvn clean package -Dno=xxx
 	sls deploy --no xxx
 
-	e.g. sls deploy --no A001
+	e.g. sls deploy --no a001
 
 # Invoke
 
-	sls invoke -f put -p event.json --no A001
+	sls invoke -f put -p event.json --no a001
 
 
 # e.g.
 ## maven build
 ```
-E:\workspaces\e.4.7.2\face-detection>mvn clean package -Dno=A001
+E:\workspaces\e.4.7.2\face-detection>mvn clean package -Dno=a001
 [INFO] Scanning for projects...
 [INFO]
 [INFO] ------------------------------------------------------------------------
@@ -36,7 +36,7 @@ E:\workspaces\e.4.7.2\face-detection>
 ```
 ## serverless deploy
 ```
-E:\workspaces\e.4.7.2\face-detection>sls deploy --no A001
+E:\workspaces\e.4.7.2\face-detection>sls deploy --no a001
 Serverless: Packaging service...
 Serverless: Creating Stack...
 Serverless: Checking Stack create progress...
@@ -50,26 +50,26 @@ Serverless: Checking Stack update progress...
 ...............
 Serverless: Stack update finished...
 Service Information
-service: A001-face-detection
+service: a001-face-detection
 stage: dev
 region: us-east-1
-stack: A001-face-detection-dev
+stack: a001-face-detection-dev
 api keys:
   None
 endpoints:
   None
 functions:
-  put: A001-face-detection-dev-put
+  put: a001-face-detection-dev-put
 
 E:\workspaces\e.4.7.2\face-detection>
 ```
 ## Invoke
 ```
-E:\workspaces\e.4.7.2\face-detection>sls invoke -f put -p event.json --no A001
+E:\workspaces\e.4.7.2\face-detection>sls invoke -f put -p event.json --no a001
 {
     "userId": "satoh001",
-    "s3Key": "image3.jpg",
-    "s3Bucket": "rekognition-satoh-test3",
+    "s3Key": "1_happy_face.jpg",
+    "s3Bucket": "stylez-sls-handson-rekognition",
     "collectionId": "rekognition-satoh-test-id",
     "detectedFaceDetails": {
         "boundingBox": {
